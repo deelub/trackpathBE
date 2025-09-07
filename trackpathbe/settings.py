@@ -50,13 +50,10 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-      'corsheaders.middleware.CorsMiddleware',
+   
 ]
 
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
-]
-
+STATIC_URL = '/static'
 
 ROOT_URLCONF = 'trackpathbe.urls'
 
@@ -84,7 +81,7 @@ WSGI_APPLICATION = 'trackpathbe.wsgi.application'
 DATABASES = {
         'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'trackpathdb',
+        'NAME': 'trackpathbe1',
         'USER': 'root',
         'PASSWORD': 'Christelle#6',
         'HOST': 'localhost',
