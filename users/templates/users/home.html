@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TrackPath</title>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+  <div class="homepage">
+    <h2>WELCOME TO</h2>
+    <img src="{% static 'Images/logo2.png' %}" alt="TrackPath Logo" id="homepage-logo">
+    <h3>TRACK PATH</h3>
+    <a href="{% url 'login' %}" id="homepage-btn">Login</a>
+    <a href="{% url 'register' %}" id="homepage-btn">Register</a>
+  </div>
+</body>
+</html>

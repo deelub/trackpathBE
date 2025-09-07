@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register</title>
+</head>
+<body>
+  <div class="page-header">
+    <p>TRACKPATH</p>
+    <img src="{% static 'Images/logo2.png' %}" alt="TrackPath Logo" id="logo">
+
+    <form method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
